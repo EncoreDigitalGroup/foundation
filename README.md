@@ -1,2 +1,2 @@
-# EncoreDigitalGroup.Package.Skeleton
-Default Package Skeleton for Encore Digital Group
+# EncoreDigitalGroup.Foundation
+Common Functionality Across Encore Digital Group Public Packages.

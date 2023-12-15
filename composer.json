@@ -1,20 +1,13 @@
 {
-    "name": "encoredigitalgroup/package-skeleton",
+    "name": "encoredigitalgroup/foundation",
     "type": "library",
-    "description": "Package Skeleton",
+    "description": "Common Functionality for Encore Digital Group Laravel Packages",
     "keywords": [
         "Encore Digital Group"
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.encoredigitalgroup.com"
-        }
     ],
     "require": {
         "php": "^8.2",
         "brainmaestro/composer-git-hooks": "^3.0@alpha",
-        "encoredigitalgroup/common": "^0.11.1",
         "laravel/framework": "^10.0",
         "spatie/laravel-package-tools": "^1.14"
     },
@@ -27,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EncoreDigitalGroup\\PackageName\\": "src/"
+            "EncoreDigitalGroup\\Foundation\\": "src/"
         }
     },
     "autoload-dev": {
@@ -43,23 +36,17 @@
         "hooks": {
             "pre-commit": [
                 "vendor/bin/duster fix"
-            ],
-            "post-update": [
-                "vendor/bin/duster fix"
             ]
         },
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "EncoreDigitalGroup\\PackageName\\ServiceProvider"
+                "EncoreDigitalGroup\\ServiceProvider"
             ]
         },
         "scripts-dev": {
             "cghooks": "vendor/bin/cghooks",
             "format": "vendor/bin/duster fix",
-            "post-update-cmd": [
-                "@format"
-            ],
             "post-autoload-dump": [
                 "@cghooks update"
             ]

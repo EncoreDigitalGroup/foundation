@@ -1,6 +1,6 @@
 <?php
 
-namespace EncoreDigitalGroup\PackageName;
+namespace EncoreDigitalGroup\Foundation;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -15,21 +15,7 @@ class ServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('package-name')
-            ->hasConfigFile();
-    }
-
-    public function boot(): void
-    {
-        $this->commands([
-            //
-        ]);
-    }
-
-    public function register()
-    {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/encoredigital.php', 'encoredigital'
-        );
+            ->name('foundation')
+            ->hasConfigFile('encoredigital');
     }
 }
