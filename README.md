@@ -1,2 +1,1 @@
-# EncoreDigitalGroup.Foundation
-Common Functionality Across Encore Digital Group Public Packages.
+# EncoreDigitalGroup/FoundationThe foundations for all Encore Digital Group projects and packages. Common functionality and utilities that are sharedacross all projects.Note: This package is read-only. It is not intended to be modified directly. If you have a suggestion or request forfunctionality, please open an issue.
