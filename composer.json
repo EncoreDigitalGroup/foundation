@@ -5,7 +5,7 @@
     "license": "proprietary",
     "require": {
         "php": "^8.2",
-        "encoredigitalgroup/stdlib": "self.version"
+        "encoredigitalgroup/stdlib": "^1.4.5"
     },
     "autoload": {
         "psr-4": {
